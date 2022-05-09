@@ -1,0 +1,362 @@
+p {
+    font-family: 'Poppins', sans-serif;
+    text-size-adjust: 12px;
+}
+
+::placeholder{
+    color:#63A3A3;
+}
+
+* {
+    margin: 0%;
+}
+
+#logo{
+    height:79px;
+    width:240px;
+    margin-top: -20px;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 320px;
+    grid-template-rows: 4% 75% 21%;
+    gap: 0px 0px;
+    grid-template-areas:
+        "landingHeader landingHeader landingHeader landingHeader"
+        "colorObjectWindow colorObjectWindow colorObjectWindow sideBarMenu"
+        "colorCardDashboard colorCardDashboard colorCardDashboard sideBarMenu";
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+#color-card {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: end; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    /* border: solid black 2px; */
+    width: 250px;
+    /* height: 300px; */
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.ColorPicker {
+    display: inline-block;
+    padding-bottom: 75px;
+    padding-top: 35px;
+    /*   border: solid red 2px; */
+}
+
+
+.color-view {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px 10px 0px 0px;
+    align-self: flex-start;
+    align-items: flex-end;
+}
+
+#drag-object {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    border-radius: 50%;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    resize: both;
+    overflow: auto;
+}
+
+.color-selector {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#selectorDropdown {
+    position: absolute;
+    left: 5%;
+    border-radius: 5px;
+    border: none;
+    color: #63A3A3;
+    background-color: #CFEDED;
+    width: 90%;
+    min-height: 30px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+#sideBarTrendingInput{
+    position:relative;
+    left: 8px;
+    border-radius: 5px;
+    border: none;
+    color: #63A3A3;
+    background-color:#CFEDED;
+    width: 90%;
+    min-height: 30px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+#sideBarSuggestedInput{
+    position:relative;
+    left: 8px;
+    border-radius: 5px;
+    border: none;
+    color: #63A3A3;
+    background-color:#CFEDED;
+    width: 90%;
+    min-height: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.options {
+    font-family: 'Poppins', sans-serif;
+}
+
+#swatches {
+    position: absolute;
+    margin-top: 72px;
+}
+
+.color-block {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin-left: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* border: 3px solid black; */
+    border-radius: 2px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.color-block:hover {
+    border: #8f7cef 3px solid;
+}
+
+.color-block:active{
+    border: #8f7cef 3px solid;  
+}
+
+#medium{
+    /* border: 3px solid red; */
+    margin-top: 5px;
+}
+
+#light{
+    /* border: 3px solid blue; */
+    margin-top: 5px;
+}
+
+
+
+/* .topBlock {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+} */
+
+
+#background {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    height: 850px;
+    position: relative;
+    width:320px;  
+}
+
+.label {
+    margin-top:20px;
+    margin-left: 8px;
+}
+
+
+#a1 {
+    background-color: #042940;
+}
+
+#a2 {
+    background-color: #048175;
+}
+
+#a3 {
+    background-color: #B4db37;
+}
+
+#a4 {
+    background-color: #dbf227;
+}
+
+#a5 {
+    background-color: #82d99f;
+}
+
+#a6 {
+    background-color: #5d9ca3;
+}
+
+#a7 {
+    background-color: #25636a;
+}
+
+#a8 {
+    background-color: #e3e3ba;
+}
+
+#a9 {
+    background-color: #edc5b7;
+}
+
+#a10 {
+    background-color: #f48d69;
+}
+
+#a11 {
+    background-color: #ff6e6e;
+}
+
+#a12 {
+    background-color: #d8655b;
+}
+
+#b1 {
+    background-color: #bf1304;
+}
+
+#b2 {
+    background-color: #a62b1f;
+}
+
+#b3 {
+    background-color: #730202;
+}
+
+#b4 {
+    background-color: #f59595;
+}
+
+#b5 {
+    background-color: #f85353;
+}
+
+#b6 {
+    background-color: #ca0909;
+}
+
+#b7 {
+    background-color: #f4851e;
+}
+
+#b8 {
+    background-color: #f7a960;
+}
+
+#b9 {
+    background-color: #f5dd88;
+}
+
+#b10 {
+    background-color: #fed74c;
+}
+
+#b11 {
+    background-color: #fff856;
+}
+
+#b12 {
+    background-color: #ddff56;
+}
+
+#c1 {
+    background-color: #8ff26c;
+}
+
+#c2 {
+    background-color: #6cf2a2;
+}
+
+#c3 {
+    background-color: #4fdebc;
+}
+
+#c4 {
+    background-color: #1eba94;
+}
+
+#c5 {
+    background-color: #1e9eba;
+}
+
+#c6 {
+    background-color: #0d87a1;
+}
+
+
+#drag-objectnucleus {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    border: solid #f4f5f0 1px;
+    box-shadow: 0 0 0 3px #574c49;
+    cursor: move;
+}
+
+#hexInput {
+    display: flex;
+    align-self: flex-end;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 22px;
+    color: white;
+    letter-spacing: 1.5px;
+    background-color: transparent;
+    border-color: transparent;
+    text-shadow: 1px 2px 2px rgba(38, 38, 38, 0.56);
+}
+
+.landingHeader {
+    grid-area: landingHeader;
+    background-image: linear-gradient(#CFEDED, #F6F6F6);
+
+}
+
+
+
+.colorObjectWindow {
+    grid-area: colorObjectWindow;
+    background-color: rgb(255, 255, 255);
+   
+}
+
+.sideBarMenu {
+    grid-area: sideBarMenu;
+    background-color: #F6F6F6;
+    
+}
+
+.colorCardDashboard {
+    grid-area: colorCardDashboard;
+    display: flex;
+    background-color:  #F6F6F6;
+}
